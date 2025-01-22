@@ -33,14 +33,16 @@ $$
 Acceleration $a(0)$ is the second derivative of position. To calculate its contribution, apply a double integral to $a(0)$:
 
 1. Integrate $a(0)$ once to calculate the velocity contribution:
-   $$
-   \int_0^t a(0) \, dt = a(0)t.
-   $$
 
-2. Integrate the result again to calculate the position contribution:
-   $$
-   \int_0^t \int_0^{t_1} a(0) \, dt_2 \, dt_1 = \frac{1}{2}a(0)t^2.
-   $$
+$$
+\int_0^t a(0) \, dt = a(0)t.
+$$
+
+3. Integrate the result again to calculate the position contribution:
+
+$$
+\int_0^t \int_0^{t_1} a(0) \, dt_2 \, dt_1 = \frac{1}{2}a(0)t^2.
+$$
 
 Adding this to the previous terms, we get the final expression for position:
 
